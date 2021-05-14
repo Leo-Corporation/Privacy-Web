@@ -1,515 +1,171 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy | Léo Corporation</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600;1,700&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
         rel="stylesheet">
-
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
-
-    <title>Léo Corporation - Vie privée</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <link rel="icon" href="favicon.png" />
 </head>
 
-<body style="margin-left: 15%; margin-right: 15%;">
-    <p><br></p>
-    <div class="ms-editor-squiggler"
-        style="color: initial; font: initial; font-feature-settings: initial; font-kerning: initial; font-optical-sizing: initial; font-variation-settings: initial; forced-color-adjust: initial; text-orientation: initial; text-rendering: initial; -webkit-font-smoothing: initial; -webkit-locale: initial; -webkit-text-orientation: initial; -webkit-writing-mode: initial; writing-mode: initial; zoom: initial; place-content: initial; place-items: initial; place-self: initial; alignment-baseline: initial; animation: initial; appearance: initial; aspect-ratio: initial; backdrop-filter: initial; backface-visibility: initial; background: initial; background-blend-mode: initial; baseline-shift: initial; block-size: initial; border-block: initial; border: initial; border-radius: initial; border-collapse: initial; border-end-end-radius: initial; border-end-start-radius: initial; border-inline: initial; border-start-end-radius: initial; border-start-start-radius: initial; inset: initial; box-shadow: initial; box-sizing: initial; break-after: initial; break-before: initial; break-inside: initial; buffered-rendering: initial; caption-side: initial; caret-color: initial; clear: initial; clip: initial; clip-path: initial; clip-rule: initial; color-interpolation: initial; color-interpolation-filters: initial; color-rendering: initial; color-scheme: initial; columns: initial; column-fill: initial; gap: initial; column-rule: initial; column-span: initial; contain: initial; contain-intrinsic-size: initial; content: initial; content-visibility: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; cursor: initial; cx: initial; cy: initial; d: initial; display: block; dominant-baseline: initial; empty-cells: initial; fill: initial; fill-opacity: initial; fill-rule: initial; filter: initial; flex: initial; flex-flow: initial; float: initial; flood-color: initial; flood-opacity: initial; grid: initial; grid-area: initial; height: 0px; hyphens: initial; image-orientation: initial; image-rendering: initial; inline-size: initial; inset-block: initial; inset-inline: initial; isolation: initial; letter-spacing: initial; lighting-color: initial; line-break: initial; list-style: initial; margin-block: initial; margin: initial; margin-inline: initial; marker: initial; mask: initial; mask-type: initial; max-block-size: initial; max-height: initial; max-inline-size: initial; max-width: initial; min-block-size: initial; min-height: initial; min-inline-size: initial; min-width: initial; mix-blend-mode: initial; object-fit: initial; object-position: initial; offset: initial; opacity: initial; order: initial; origin-trial-test-property: initial; orphans: initial; outline: initial; outline-offset: initial; overflow-anchor: initial; overflow-wrap: initial; overflow: initial; overscroll-behavior-block: initial; overscroll-behavior-inline: initial; overscroll-behavior: initial; padding-block: initial; padding: initial; padding-inline: initial; page: initial; page-orientation: initial; paint-order: initial; perspective: initial; perspective-origin: initial; pointer-events: initial; position: initial; quotes: initial; r: initial; resize: initial; ruby-position: initial; rx: initial; ry: initial; scroll-behavior: initial; scroll-margin-block: initial; scroll-margin: initial; scroll-margin-inline: initial; scroll-padding-block: initial; scroll-padding: initial; scroll-padding-inline: initial; scroll-snap-align: initial; scroll-snap-stop: initial; scroll-snap-type: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; shape-rendering: initial; size: initial; speak: initial; stop-color: initial; stop-opacity: initial; stroke: initial; stroke-dasharray: initial; stroke-dashoffset: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-width: initial; tab-size: initial; table-layout: initial; text-align: initial; text-align-last: initial; text-anchor: initial; text-combine-upright: initial; text-decoration: initial; text-decoration-skip-ink: initial; text-indent: initial; text-overflow: initial; text-shadow: initial; text-size-adjust: initial; text-transform: initial; text-underline-offset: initial; text-underline-position: initial; touch-action: initial; transform: initial; transform-box: initial; transform-origin: initial; transform-style: initial; transition: initial; user-select: initial; vector-effect: initial; vertical-align: initial; visibility: initial; -webkit-app-region: initial; border-spacing: initial; -webkit-border-image: initial; -webkit-box-align: initial; -webkit-box-decoration-break: initial; -webkit-box-direction: initial; -webkit-box-flex: initial; -webkit-box-ordinal-group: initial; -webkit-box-orient: initial; -webkit-box-pack: initial; -webkit-box-reflect: initial; -webkit-highlight: initial; -webkit-hyphenate-character: initial; -webkit-line-break: initial; -webkit-line-clamp: initial; -webkit-mask-box-image: initial; -webkit-mask: initial; -webkit-mask-composite: initial; -webkit-perspective-origin-x: initial; -webkit-perspective-origin-y: initial; -webkit-print-color-adjust: initial; -webkit-rtl-ordering: initial; -webkit-ruby-position: initial; -webkit-tap-highlight-color: initial; -webkit-text-combine: initial; -webkit-text-decorations-in-effect: initial; -webkit-text-emphasis: initial; -webkit-text-emphasis-position: initial; -webkit-text-fill-color: initial; -webkit-text-security: initial; -webkit-text-stroke: initial; -webkit-transform-origin-x: initial; -webkit-transform-origin-y: initial; -webkit-transform-origin-z: initial; -webkit-user-drag: initial; -webkit-user-modify: initial; white-space: initial; widows: initial; width: initial; will-change: initial; word-break: initial; word-spacing: initial; x: initial; y: initial; z-index: initial;">
-        <br>
-    </div>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:center;'>
-        <strong><span style="font-family:Montserrat;">Politique de confidentialit&eacute;</span></strong>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:center;'>
-        <span style="font-family:Montserrat;">Derni&egrave;re r&eacute;vision&nbsp;: 16/03/2021</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <strong><span style="font-family:Montserrat;">Introduction</span></strong>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">Nous (&laquo; nous &raquo;) nous soucions de la vie priv&eacute;e des
-            utilisateurs (l&rsquo;&laquo; utilisateur &raquo; ou &laquo; vous &raquo;) de notre site Internet et/ou de
-            notre espace mobile (le &laquo; Site &raquo; et l&rsquo;&laquo; Espace mobile &raquo;, respectivement) et
-            nous nous engageons &agrave; prot&eacute;ger les informations que les utilisateurs partagent avec nous
-            lorsqu&rsquo;ils utilisent notre Site et/ou notre Espace mobile (collectivement, les &laquo;
-            Propri&eacute;t&eacute;s num&eacute;riques &raquo;), et nous nous engageons pleinement &agrave;
-            prot&eacute;ger et &agrave; utiliser vos informations conform&eacute;ment &agrave; la loi
-            applicable.&nbsp;</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">Cette Politique de confidentialit&eacute; d&eacute;crit nos pratiques en
-            mati&egrave;re de recueil, d&apos;utilisation et de divulgation de vos informations par le biais de nos
-            propri&eacute;t&eacute;s num&eacute;riques (les &laquo; Services &raquo;), lorsque vous acc&eacute;dez aux
-            Services depuis votre appareil.&nbsp;</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">Avant d&apos;acc&eacute;der ou d&apos;utiliser l&apos;un de nos Services,
-            veuillez lire attentivement cette Politique de confidentialit&eacute; et vous assurer que vous comprenez
-            parfaitement nos pratiques concernant vos informations. Si vous lisez et comprenez pleinement cette
-            Politique de confidentialit&eacute;, et que vous restez oppos&eacute;(e) &agrave; nos pratiques, vous devez
-            imm&eacute;diatement et cesser toute utilisation de nos Propri&eacute;t&eacute;s num&eacute;rique et de nos
-            Services. En utilisant nos Services, vous acceptez les conditions de cette Politique de
-            confidentialit&eacute; et le fait de continuer &agrave; utiliser les Services constitue votre acceptation de
-            cette Politique de confidentialit&eacute; et de tout amendement &agrave; celle-ci.&nbsp;</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">Dans la pr&eacute;sente Politique de confidentialit&eacute;, vous
-            trouverez des explications sur les questions suivantes&nbsp;:</span>
-    </p>
-    <ul style="list-style-type: undefined;margin-left:26px;">
-        <li><span style="font-family:Montserrat;">Les informations que nous recueillons</span></li>
-        <li><span style="font-family:Montserrat;">Comment nous recueillons les informations</span></li>
-        <li><span style="font-family:Montserrat;">Pourquoi nous recueillons les informations</span></li>
-        <li><span style="font-family:Montserrat;">Avec qui nous partageons les informations</span></li>
-        <li><span style="font-family:Montserrat;">O&ugrave; sont stock&eacute;es les informations &nbsp;</span></li>
-        <li><span style="font-family:Montserrat;">Combien de temps sont conserv&eacute;es les informations</span></li>
-        <li><span style="font-family:Montserrat;">Comment nous prot&eacute;geons les informations&nbsp;</span></li>
-        <li><span style="font-family:Montserrat;">Mineurs</span></li>
-        <li><span style="font-family:Montserrat;">Modifications ou mises &agrave; jour de la Politique de
-                confidentialit&eacute;</span></li>
-    </ul>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">&nbsp;</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <strong><span style="font-family:Montserrat;">Les informations que nous recueillons</span></strong>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">Vous trouverez ci-dessous les diff&eacute;rents types d&apos;informations
-            que nous pouvons recueillir.&nbsp;</span>
-    </p>
-    <ul style="list-style-type: undefined;margin-left:26px;">
-        <li><span style="font-family:Montserrat;">Les informations non identifi&eacute;es et non identifiables, qui
-                peuvent &ecirc;tre fournies par vous lors du processus d&apos;enregistrement ou recueillies lorsque vous
-                utilisez nos Services (les &laquo;&nbsp;Informations non personnelles&nbsp;&raquo;). Les informations
-                non personnelles ne nous permettent pas d&apos;identifier la personne aupr&egrave;s de qui elles ont
-                &eacute;t&eacute; recueillies. Les Informations non personnelles que nous recueillons consistent
-                principalement en des informations techniques et des informations d&apos;utilisation
-                agr&eacute;g&eacute;es.</span></li>
-        <li><span style="font-family:Montserrat;">Les informations permettant de vous identifier individuellement,
-                c&rsquo;est-&agrave;-dire les informations qui vous identifient ou qui peuvent, moyennant un effort
-                raisonnable, vous identifier (les &laquo; Informations personnelles &raquo;). Les Informations
-                personnelles que nous recueillons par le biais de nos Services sont notamment le nom, l&apos;adresse
-                e-mail, l&apos;adresse, le num&eacute;ro de t&eacute;l&eacute;phone, l&apos;adresse IP ou d&apos;autres
-                informations demand&eacute;es &agrave; chaque fois que n&eacute;cessaire. Si nous combinons des
-                Informations personnelles avec des Informations non personnelles, nous traiterons les informations
-                combin&eacute;es comme des Informations personnelles aussi longtemps qu&apos;elles resteront
-                combin&eacute;es.&nbsp;</span></li>
-    </ul>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <strong><span style="font-family:Montserrat;">Comment nous recueillons les informations &nbsp;</span></strong>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">Vous trouverez ci-dessous les principales m&eacute;thodes que nous
-            utilisons pour recueillir des informations :&nbsp;</span>
-    </p>
-    <ul style="list-style-type: undefined;margin-left:26px;">
-        <li><span style="font-family:Montserrat;">Nous recueillons des informations lorsque vous utilisez les Services.
-                Lorsque vous visitez nos Propri&eacute;t&eacute;s num&eacute;riques ou que vous utilisez nos Services,
-                nous pouvons recueillir, collecter et enregistrer ces utilisations, sessions et informations
-                connexes.</span></li>
-        <li><span style="font-family:Montserrat;">Nous recueillons les informations que vous nous fournissez
-                volontairement. Par exemple, nous recueillons les informations que vous nous fournissez lorsque vous
-                nous contactez directement par n&apos;importe quel canal de communication (par exemple lorsque vous nous
-                envoyez un e-mail contenant un commentaire ou un retour d&apos;information).</span></li>
-        <li><span style="font-family:Montserrat;">Nous pouvons recueillir des informations aupr&egrave;s de sources
-                tierces, tel que d&eacute;crit ci-dessous.</span></li>
-        <li><span style="font-family:Montserrat;">Nous recueillons les informations que vous nous fournissez si vous
-                vous connectez &agrave; nos Services par le biais de services tiers comme Facebook ou Google.</span>
-        </li>
-    </ul>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <strong><span style="font-family:Montserrat;">Pourquoi nous recueillons les informations</span></strong>
-    </p>
-    <p style='margin:0cm;line-height:160%;font-size:15px;font-family:"Arial",sans-serif;text-align:justify;'><span
-            style="font-family:Montserrat;">Nous utilisons vos Informations personnelles aux fins
-            suivantes&nbsp;:</span></p>
-    <ul style="list-style-type: undefined;margin-left:26px;">
-        <li><span style="font-family:Montserrat;">Pour fournir et exploiter les Services</span></li>
-        <li><span style="font-family:Montserrat;">Pour d&eacute;velopper, personnaliser et am&eacute;liorer nos
-                Services</span></li>
-        <li><span style="font-family:Montserrat;">Pour r&eacute;pondre &agrave; vos r&eacute;actions, demandes et
-                requ&ecirc;tes et vous apporter notre assistance</span></li>
-        <li><span style="font-family:Montserrat;">Pour analyser les sch&eacute;mas de demande et
-                d&apos;utilisation</span></li>
-        <li><span style="font-family:Montserrat;">&Agrave; d&apos;autres fins internes, de recherche ou de
-                statistiques</span></li>
-        <li><span style="font-family:Montserrat;">Pour renforcer nos capacit&eacute;s en mati&egrave;re de
-                s&eacute;curit&eacute; des donn&eacute;es et de pr&eacute;vention de la fraude</span></li>
-        <li><span style="font-family:Montserrat;">Pour enqu&ecirc;ter sur les &eacute;ventuelles violations, faire
-                respecter nos conditions ou nos politiques, ou se conformer &agrave; une loi, une r&eacute;glementation
-                ou une autorit&eacute; gouvernementale applicable.</span></li>
-        <li><span style="font-family:Montserrat;">Pour vous envoyer des mises &agrave; jour, des avis, des documents
-                promotionnels et d&apos;autres informations concernant nos Services. Si nous vous envoyons des e-mails
-                promotionnels, vous pouvez choisir de ne plus les recevoir en cliquant sur le lien de
-                d&eacute;sabonnement que ces e-mails contiennent.&nbsp;</span></li>
-    </ul>
-    <p style='margin:0cm;line-height:160%;font-size:15px;font-family:"Arial",sans-serif;text-align:justify;'><br></p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <strong><span style="font-family:Montserrat;">Avec qui nous partageons les informations</span></strong>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">Nous pouvons partager vos informations avec nos fournisseurs de services,
-            afin d&apos;exploiter nos Services (par exemple, en stockant des informations sur les services
-            d&apos;h&eacute;bergement tiers, en fournissant notre assistance technique, etc.)&nbsp;</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">Nous pouvons &eacute;galement divulguer vos informations dans les
-            circonstances suivantes : (i) pour enqu&ecirc;ter, d&eacute;tecter, pr&eacute;venir ou prendre des mesures
-            concernant des activit&eacute;s ill&eacute;gales ou d&apos;autres actes r&eacute;pr&eacute;hensibles, des
-            soup&ccedil;ons de fraude ou des questions de s&eacute;curit&eacute; ; (ii) pour &eacute;tablir ou exercer
-            nos droits de d&eacute;fense contre des revendications l&eacute;gales ; (iii) pour prot&eacute;ger nos
-            droits, nos biens ou notre s&eacute;curit&eacute; personnelle et ceux de nos utilisateurs ou du grand public
-            ; (iv) si nous ou l&apos;une de nos soci&eacute;t&eacute;s affili&eacute;es subissons un changement de
-            contr&ocirc;le, y compris par le biais d&apos;une fusion, d&apos;une acquisition ou d&apos;un achat de tous
-            ou de la quasi-totalit&eacute; de nos actifs ; (v) pour collecter, d&eacute;tenir et/ou g&eacute;rer vos
-            informations par le biais de nos fournisseurs de services tiers autoris&eacute;s (par exemple, des
-            soci&eacute;t&eacute;s de services en ligne), dans la mesure o&ugrave; cela est raisonnable &agrave; des
-            fins commerciales ; ou (vi) pour coop&eacute;rer avec des tiers dans le but d&apos;am&eacute;liorer votre
-            exp&eacute;rience. Pour &eacute;viter toute confusion possible, nous pouvons transf&eacute;rer et divulguer
-            &agrave; des tiers ou utiliser autrement les Informations non personnelles &agrave; notre seule
-            discr&eacute;tion.</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">&nbsp;</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <strong><span style="font-family:Montserrat;">Cookies et technologies similaires</span></strong>
-    </p>
-    <p style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:justify;'><span
-            style="font-family:Montserrat;">Lorsque vous visitez ou acc&eacute;dez &agrave; notre Service, nous
-            autorisons certains tiers &agrave; utiliser des balises web, des cookies, des pixels invisibles, des
-            scripts, des balises et d&apos;autres technologies et services d&apos;analyse (les &laquo;&nbsp;Technologies
-            de suivi&nbsp;&raquo;). Ces Technologies de suivi peuvent permettre &agrave; des tiers de recueillir
-            automatiquement des informations vous concernant afin d&apos;am&eacute;liorer la mani&egrave;re dont vous
-            naviguez sur nos Propri&eacute;t&eacute;s num&eacute;riques, d&apos;am&eacute;liorer les performances de nos
-            Propri&eacute;t&eacute;s num&eacute;riques et de personnaliser votre exp&eacute;rience sur nos
-            Propri&eacute;t&eacute;s num&eacute;riques, ainsi qu&apos;&agrave; des fins de s&eacute;curit&eacute; et de
-            pr&eacute;vention de la fraude.</span></p>
-    <p style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:justify;'><span
-            style="font-family:Montserrat;"><br>&nbsp;Pour en savoir plus, consultez notre Politique en mati&egrave;re
-            de cookies.</span></p>
-    <p style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:justify;'><span
-            style="font-family:Montserrat;">&nbsp;</span></p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">Nous ne partagerons pas votre adresse e-mail, ni toute autre Information
-            personnelle, avec des soci&eacute;t&eacute;s de publicit&eacute; en ligne ou des r&eacute;seaux
-            publicitaires sans votre consentement.</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">&nbsp;</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">Par le biais de notre Service et de nos Propri&eacute;t&eacute;s
-            num&eacute;riques (y compris les sites web et les applications qui d&eacute;ploient notre Service), nous
-            pouvons fournir des publicit&eacute;s qui peuvent &eacute;galement vous &ecirc;tre adapt&eacute;es, par
-            exemple des publicit&eacute;s qui sont bas&eacute;es sur votre comportement de navigation r&eacute;cent sur
-            diff&eacute;rents sites web, navigateurs ou appareils.</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">Afin de vous fournir ces publicit&eacute;s, nous pouvons utiliser des
-            cookies et/ou JavaScript et/ou des balises web (y compris des GIF invisibles) et/ou le stockage local HTML5
-            et/ou d&apos;autres technologies. Nous pouvons &eacute;galement faire appel &agrave; des tiers, comme des
-            annonceurs r&eacute;seau, qui sont des tiers qui affichent des publicit&eacute;s en fonction de vos visites
-            sur les sites web, afin de vous pr&eacute;senter des publicit&eacute;s cibl&eacute;es. Les fournisseurs de
-            r&eacute;seaux publicitaires tiers, les annonceurs, les sponsors et/ou les services de mesure du trafic
-            peuvent &eacute;galement utiliser des cookies et/ou JavaScript et/ou des balises web (y compris des GIF
-            invisibles) et/ou des LSO Flash et/ou d&apos;autres technologies pour mesurer l&apos;efficacit&eacute; de
-            leurs publicit&eacute;s et personnaliser pour vous le contenu publicitaire. Ces cookies et autres
-            technologies tierces sont r&eacute;gis par la politique de confidentialit&eacute; sp&eacute;cifique de
-            chaque tiers, et non pas par la pr&eacute;sente.</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <strong><span style="font-family:Montserrat;">O&ugrave; sont stock&eacute;es les informations</span></strong>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:justify;background:white;'>
-        <em><span style="font-family:Montserrat;color:black;">Informations non personnelles</span></em>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:justify;background:white;'>
-        <span style="font-family:Montserrat;color:black;">Veuillez noter que nos entreprises, ainsi que les partenaires
-            et les fournisseurs de services &agrave; qui nous faisons confiance, sont situ&eacute;s dans le monde
-            entier. Toutes les Informations non personnelles que nous recueillons sont stock&eacute;es et
-            trait&eacute;es dans diverses juridictions &agrave; travers le monde, aux fins d&eacute;taill&eacute;es dans
-            la pr&eacute;sente Politique de confidentialit&eacute;.</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:justify;background:white;'>
-        <em><span style="font-family:Montserrat;color:black;">&nbsp;</span></em>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <em><span style="font-family:Montserrat;">Informations personnelles</span></em>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">Les Informations personnelles peuvent &ecirc;tre conserv&eacute;es,
-            trait&eacute;es et stock&eacute;es aux &Eacute;tats-Unis d&apos;Am&eacute;rique, en Irlande, au Japon, en
-            Isra&euml;l et dans d&apos;autres juridictions si cela est n&eacute;cessaire pour la bonne prestation de nos
-            services et/ou si la loi l&apos;exige (comme expliqu&eacute; plus en d&eacute;tail ci-dessous).</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <strong><span style="font-family:Montserrat;">Combien de temps sont conserv</span></strong><strong><span
-                style="font-family:Montserrat;">&eacute;</span></strong><strong><span style="font-family:Montserrat;">es
-                les informations&nbsp;:</span></strong>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">Veuillez noter que nous conservons les informations que nous recueillons
-            aussi longtemps que n&eacute;cessaire pour fournir les Services et pour nous conformer &agrave; nos
-            obligations l&eacute;gales ou contractuelles envers vous, r&eacute;soudre les litiges et faire respecter nos
-            accords.</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">Nous pouvons rectifier, compl&eacute;ter ou supprimer des informations
-            incompl&egrave;tes ou inexactes, &agrave; tout moment et &agrave; notre enti&egrave;re
-            discr&eacute;tion.</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">&nbsp;</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <strong><span style="font-family:Montserrat;">Comment Wix prot&egrave;ge les informations :</span></strong>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">Le service d&apos;h&eacute;bergement de nos Propri&eacute;t&eacute;s
-            num&eacute;riques met &agrave; notre disposition la plateforme en ligne qui nous permet de vous fournir le
-            Service. Vos donn&eacute;es peuvent &ecirc;tre stock&eacute;es par l&apos;interm&eacute;diaire des
-            applications de stockage de donn&eacute;es, de bases de donn&eacute;es ou g&eacute;n&eacute;rales de notre
-            fournisseur d&apos;h&eacute;bergement. Il stocke vos informations sur des serveurs s&eacute;curis&eacute;s
-            derri&egrave;re un pare-feu et offre un acc&egrave;s s&eacute;curis&eacute; HTTPS &agrave; la plupart de ses
-            services</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">&nbsp;</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <strong><span style="font-family:Montserrat;">Mineurs</span></strong>
-    </p>
-    <p style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;background:white;'><span
-            style="font-size:16px;font-family:Montserrat;color:#500050;">&nbsp;</span></p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:23.0pt;text-align:justify;background:white;'>
-        <span style="font-family:Montserrat;color:black;">Les enfants peuvent utiliser nos Services, mais les enfants
-            qui souhaitent acc&eacute;der &agrave; certaines fonctionnalit&eacute;s peuvent devoir fournir certaines
-            informations. Certaines informations, notamment celles recueillies par&nbsp;</span><span
-            style="font-family:Montserrat;color:black;"><a href="#"><span style="color:black;text-decoration:none;">les
-                    cookies, les balises web et autres technologies
-                    similaires</span></a>&nbsp;</span><span style="font-family:Montserrat;color:black;">peuvent
-            &ecirc;tre recueillies automatiquement. Si nous recueillons, utilisons ou divulguons
-            d&eacute;lib&eacute;r&eacute;ment des informations recueillies aupr&egrave;s d&apos;un enfant, nous en
-            informerons ses parents et demanderons leur consentement conform&eacute;ment &agrave; la l&eacute;gislation
-            en vigueur. Nous ne conditionnons pas la participation d&apos;un enfant &agrave; une activit&eacute; en
-            ligne &agrave; la fourniture par cet enfant de plus de donn&eacute;es de contact qu&apos;il n&apos;est
-            raisonnablement n&eacute;cessaire pour participer &agrave; cette activit&eacute;. Nous utilisons les
-            informations que nous recueillons en fonction des services demand&eacute;s par l&apos;enfant.&nbsp;</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:23.0pt;text-align:justify;background:white;'>
-        <span style="font-family:Montserrat;color:black;">Nous pouvons &eacute;galement utiliser les coordonn&eacute;es
-            d&apos;un parent pour communiquer avec lui au sujet des activit&eacute;s de son enfant sur les Services. Les
-            parents peuvent examiner les informations que nous avons recueillies aupr&egrave;s de leur enfant, refuser
-            de nous autoriser &agrave; recueillir d&apos;autres informations aupr&egrave;s de leur enfant et demander
-            que toute information que nous avons recueillie soit supprim&eacute;e de nos dossiers.</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:23.0pt;text-align:justify;background:white;'>
-        <span style="font-family:Montserrat;color:black;">Pour examiner, mettre &agrave; jour ou supprimer les
-            informations concernant votre enfant, veuillez&nbsp;</span><span
-            style="font-family:Montserrat;color:black;"><a href="#"><span style="color:black;text-decoration:none;">nous
-                    contacter</span></a></span><span style="font-family:Montserrat;color:black;">. &nbsp;Pour
-            prot&eacute;ger votre enfant, nous pouvons vous
-            demander de nous fournir une preuve de votre identit&eacute;. Nous pouvons vous refuser l&apos;acc&egrave;s
-            si nous pensons qu&apos;il y a un doute sur votre identit&eacute;. Veuillez noter que certaines informations
-            ne peuvent pas &ecirc;tre supprim&eacute;es en raison d&apos;autres obligations l&eacute;gales.</span>
-    </p>
+<body style="font-family: Montserrat, sans-serif;">
+    <header id="header" x-data="{ mobileMenuOpen : false }"
+        class="backdrop-filter transition backdrop-blur-lg flex flex-wrap flex-row justify-between md:items-center md:space-x-4 sticky top-0 w-full py-6 px-6">
+        <a href="#" class="block">
+            <span class="sr-only">Léo Corporation</span>
+            <img class="h-6 md:h-8" src="img/logo.png" alt="Logo" title=" Logo">
+        </a>
+        <button @click="mobileMenuOpen = !mobileMenuOpen"
+            class="inline-block md:hidden w-8 h-8 bg-gray-200 text-gray-600 p-1">
+            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+        <nav class="absolute md:relative top-16 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto bg-white shadow-md rounded-lg md:rounded-none md:shadow-none md:bg-transparent p-6 pt-0 md:p-0"
+            :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}" @click.away="mobileMenuOpen = false">
+            <a href="#" class="block py-1 text-indigo-600 hover:text-indigo-600 transition">Privacy</a>
+            <a href="mailto:leopeyronnet.corp@hotmail.com"
+                class="block py-1 text-gray-600 hover:text-indigo-600 transition">Contact</a>
+            <a href="https://leocorporation.dev/" class="block py-1 text-gray-600 hover:text-indigo-600 transition">Back
+                to leocorporation.dev</a>
+        </nav>
+    </header>
 
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">Nous n&apos;utiliserons vos informations personnelles qu&apos;aux fins
-            d&eacute;finies dans cette Politique de confidentialit&eacute;, si&nbsp;:</span>
-    </p>
-    <ul style="list-style-type: undefined;margin-left:32px;">
-        <li><span style="font-family:Montserrat;">L&apos;utilisation de vos Informations personnelles est
-                n&eacute;cessaire pour ex&eacute;cuter un contrat ou prendre des mesures en vue de conclure un contrat
-                avec vous (par exemple, pour vous fournir les Services ou pour vous fournir notre assistance client ou
-                technique)</span></li>
-        <li><span style="font-family:Montserrat;">Il nous est n&eacute;cessaire d&apos;utiliser vos Informations
-                personnelles pour nous conformer &agrave; une obligation l&eacute;gale ou r&eacute;glementaire
-                pertinente</span></li>
-        <li><span style="font-family:Montserrat;">Il nous est n&eacute;cessaire d&rsquo;utiliser vos Informations
-                personnelles pour nos int&eacute;r&ecirc;ts l&eacute;gitimes en tant qu&apos;entreprise, &agrave;
-                condition que cette utilisation soit &agrave; tout moment proportionn&eacute;e et respectueuse de vos
-                droits &agrave; la vie priv&eacute;e.</span></li>
-    </ul>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">&nbsp;</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:justify;background:white;'>
-        <span style="font-family:Montserrat;color:black;">Si vous r&eacute;sidez dans l&apos;UE, vous
-            pouvez&nbsp;:</span>
-    </p>
-    <ul style="list-style-type: undefined;margin-left:26px;">
-        <li><span style="font-family:Montserrat;">Demander &agrave; recevoir la confirmation que des Informations
-                personnelles vous concernant sont trait&eacute;es ou non, et acc&eacute;der aux Informations
-                personnelles que nous stockons vous concernant, ainsi qu&apos;&agrave; certaines informations
-                suppl&eacute;mentaires</span></li>
-        <li><span style="font-family:Montserrat;">Demander &agrave; recevoir des Informations personnelles que vous nous
-                fournissez directement &agrave; titre volontaire dans un format structur&eacute;, couramment
-                utilis&eacute; et lisible par machine</span></li>
-        <li><span style="font-family:Montserrat;">Demander la rectification de vos Informations personnelles qui sont
-                sous notre contr&ocirc;le</span></li>
-        <li><span style="font-family:Montserrat;">Demander l&apos;effacement de vos Informations personnelles</span>
-        </li>
-        <li><span style="font-family:Montserrat;">Vous opposer au traitement des donn&eacute;es personnelles par nos
-                soins</span></li>
-        <li><span style="font-family:Montserrat;">Demander la limitation du traitement de vos Informations personnelles
-                par nos soins</span></li>
-        <li><span style="font-family:Montserrat;">D&eacute;poser une plainte aupr&egrave;s d&apos;une autorit&eacute; de
-                contr&ocirc;le</span></li>
-    </ul>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:justify;background:white;'>
-        <span style="font-family:Montserrat;color:black;">&nbsp;</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:justify;background:white;'>
-        <span style="font-family:Montserrat;color:black;">Toutefois, veuillez noter que ces droits ne sont pas absolus
-            et qu&rsquo;ils peuvent &ecirc;tre soumis &agrave; nos propres int&eacute;r&ecirc;ts l&eacute;gitimes ou
-            exigences r&eacute;glementaires. Si vous avez des questions d&apos;ordre g&eacute;n&eacute;ral sur les
-            Informations personnelles que nous recueillons et sur la mani&egrave;re dont nous les utilisons, veuillez
-            nous contacter de la mani&egrave;re indiqu&eacute;e ci-dessous.</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:10.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">Dans le cadre de la mise &agrave; disposition des Services &agrave; nos
-            utilisateurs, nous pouvons transf&eacute;rer des informations &agrave; des entit&eacute;s affili&eacute;es
-            ou &agrave; d&apos;autres tiers au-del&agrave; des fronti&egrave;res de votre pays ou juridiction, vers
-            d&apos;autres pays ou juridictions dans le monde. En utilisant les Services, vous consentez au transfert de
-            vos informations en dehors de l&apos;EEE.&nbsp;</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:10.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">Si vous &ecirc;tes situ&eacute;(e) dans l&apos;EEE, vos Informations
-            personnelles ne pourront &ecirc;tre transf&eacute;r&eacute;es vers des lieux situ&eacute;s en dehors de
-            l&apos;EEE que si nous sommes convaincus qu&rsquo;un niveau de protection ad&eacute;quat ou comparable est
-            en place pour prot&eacute;ger les Informations personnelles. Nous prendrons des mesures raisonnables pour
-            nous assurer que nous avons des accords contractuels appropri&eacute;s avec nos tiers pour garantir que des
-            garanties ad&eacute;quates sont en place de sorte que les risques d&apos;utilisation ill&eacute;gale, de
-            modification, de suppression, de perte ou de vol de vos Informations personnelles soient minimis&eacute;s,
-            et que ces tiers agissent &agrave; tout moment en conformit&eacute; avec les lois applicables.&nbsp;</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:10.0pt;text-align:justify;'>
-        <strong><span style="font-family:Montserrat;">Droits CCPA relatifs &agrave; vos
-                informations&nbsp;</span></strong>
-    </p>
-    <p
-        style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:10.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">Si vous &ecirc;tes un r&eacute;sident de Californie utilisant les
-            Services, la loi californienne sur la protection de la vie priv&eacute;e des consommateurs (la &laquo; loi
-            CCPA &raquo;) peut vous donner le droit de demander l&apos;acc&egrave;s &agrave; vos informations et leur
-            suppression.&nbsp;</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:10.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">Pour exercer votre droit d&apos;acc&egrave;s &agrave; vos informations et
-            &agrave; leur suppression, veuillez nous contacter de la mani&egrave;re indiqu&eacute;e
-            ci-apr&egrave;s.</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:10.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">Les utilisateurs des Services qui sont r&eacute;sidents de Californie et
-            &acirc;g&eacute;s de moins de 18 ans peuvent demander et obtenir le retrait de tout contenu qu&apos;ils ont
-            publi&eacute; en nous envoyant un e-mail &agrave; l&rsquo;adresse indiqu&eacute;e ci-apr&egrave;s dans la
-            rubrique &laquo; Nous contacter &raquo;. &nbsp;Toute demande en ce sens devra porter la mention &laquo;
-            California Removal Request &raquo; dans votre e-mail. Toute demande devra fournir une description du contenu
-            que vous souhaitez supprimer et des informations raisonnablement suffisantes pour nous permettre de
-            localiser ce contenu. Nous rejetons toutes les demandes &laquo; California Removal Request &raquo; qui ne
-            sont pas marqu&eacute;es ou envoy&eacute;es correctement, et nous pourrions ne pas &ecirc;tre en mesure de
-            r&eacute;pondre si vous ne fournissez pas les informations ad&eacute;quates. Veuillez noter que votre
-            demande ne garantit pas un retrait complet ou exhaustif du contenu concern&eacute;. Par exemple, les
-            documents que vous avez publi&eacute;s peuvent &ecirc;tre republi&eacute;s par un autre utilisateur ou un
-            tiers.&nbsp;</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;color:red;"><br>&nbsp;</span><strong><span
-                style="font-family:Montserrat;">Modifications ou mises &agrave; jour de la Politique de
-                confidentialit&eacute;</span></strong>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">Nous pouvons r&eacute;viser cette politique de confidentialit&eacute;
-            &agrave; chaque fois que n&eacute;cessaire, &agrave; notre seule discr&eacute;tion, et la version la plus
-            r&eacute;cente sera toujours affich&eacute;e sur notre site web (comme indiqu&eacute; dans la rubrique
-            &laquo; Derni&egrave;re r&eacute;vision &raquo;). Nous vous encourageons &agrave; consulter
-            r&eacute;guli&egrave;rement la pr&eacute;sente Politique de confidentialit&eacute; pour prendre connaissance
-            de toute modification. En cas de changements importants, nous publierons sur notre site web un avis pour
-            annoncer ces changements. &nbsp;Si vous continuez &agrave; utiliser les Services apr&egrave;s la
-            notification de modifications sur notre site web, cela constituera votre reconnaissance de, et votre
-            consentement &agrave;, ces modifications de la Politique de confidentialit&eacute; et votre accord &agrave;
-            &ecirc;tre li&eacute;(e) par les conditions de ces modifications.</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;color:red;"><br>&nbsp;</span><strong><span
-                style="font-family:Montserrat;">Nous contacter</span></strong>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">Si vous avez des questions d&apos;ordre g&eacute;n&eacute;ral sur les
-            Services ou les informations que nous recueillons &agrave; votre sujet, ou sur la mani&egrave;re dont nous
-            les utilisons, contactez-nous&nbsp;:</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">L&eacute;o Corporation</span>
-    </p>
-    <p
-        style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;margin-bottom:6.0pt;text-align:justify;'>
-        <span style="font-family:Montserrat;">E-mail : leopeyronnet.corp@hotmail.com</span>
-    </p>
-    <div class="ms-editor-squiggler"
-        style="color: initial; font: initial; font-feature-settings: initial; font-kerning: initial; font-optical-sizing: initial; font-variation-settings: initial; forced-color-adjust: initial; text-orientation: initial; text-rendering: initial; -webkit-font-smoothing: initial; -webkit-locale: initial; -webkit-text-orientation: initial; -webkit-writing-mode: initial; writing-mode: initial; zoom: initial; place-content: initial; place-items: initial; place-self: initial; alignment-baseline: initial; animation: initial; appearance: initial; aspect-ratio: initial; backdrop-filter: initial; backface-visibility: initial; background: initial; background-blend-mode: initial; baseline-shift: initial; block-size: initial; border-block: initial; border: initial; border-radius: initial; border-collapse: initial; border-end-end-radius: initial; border-end-start-radius: initial; border-inline: initial; border-start-end-radius: initial; border-start-start-radius: initial; inset: initial; box-shadow: initial; box-sizing: initial; break-after: initial; break-before: initial; break-inside: initial; buffered-rendering: initial; caption-side: initial; caret-color: initial; clear: initial; clip: initial; clip-path: initial; clip-rule: initial; color-interpolation: initial; color-interpolation-filters: initial; color-rendering: initial; color-scheme: initial; columns: initial; column-fill: initial; gap: initial; column-rule: initial; column-span: initial; contain: initial; contain-intrinsic-size: initial; content: initial; content-visibility: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; cursor: initial; cx: initial; cy: initial; d: initial; display: block; dominant-baseline: initial; empty-cells: initial; fill: initial; fill-opacity: initial; fill-rule: initial; filter: initial; flex: initial; flex-flow: initial; float: initial; flood-color: initial; flood-opacity: initial; grid: initial; grid-area: initial; height: 0px; hyphens: initial; image-orientation: initial; image-rendering: initial; inline-size: initial; inset-block: initial; inset-inline: initial; isolation: initial; letter-spacing: initial; lighting-color: initial; line-break: initial; list-style: initial; margin-block: initial; margin: initial; margin-inline: initial; marker: initial; mask: initial; mask-type: initial; max-block-size: initial; max-height: initial; max-inline-size: initial; max-width: initial; min-block-size: initial; min-height: initial; min-inline-size: initial; min-width: initial; mix-blend-mode: initial; object-fit: initial; object-position: initial; offset: initial; opacity: initial; order: initial; origin-trial-test-property: initial; orphans: initial; outline: initial; outline-offset: initial; overflow-anchor: initial; overflow-wrap: initial; overflow: initial; overscroll-behavior-block: initial; overscroll-behavior-inline: initial; overscroll-behavior: initial; padding-block: initial; padding: initial; padding-inline: initial; page: initial; page-orientation: initial; paint-order: initial; perspective: initial; perspective-origin: initial; pointer-events: initial; position: initial; quotes: initial; r: initial; resize: initial; ruby-position: initial; rx: initial; ry: initial; scroll-behavior: initial; scroll-margin-block: initial; scroll-margin: initial; scroll-margin-inline: initial; scroll-padding-block: initial; scroll-padding: initial; scroll-padding-inline: initial; scroll-snap-align: initial; scroll-snap-stop: initial; scroll-snap-type: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; shape-rendering: initial; size: initial; speak: initial; stop-color: initial; stop-opacity: initial; stroke: initial; stroke-dasharray: initial; stroke-dashoffset: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-width: initial; tab-size: initial; table-layout: initial; text-align: initial; text-align-last: initial; text-anchor: initial; text-combine-upright: initial; text-decoration: initial; text-decoration-skip-ink: initial; text-indent: initial; text-overflow: initial; text-shadow: initial; text-size-adjust: initial; text-transform: initial; text-underline-offset: initial; text-underline-position: initial; touch-action: initial; transform: initial; transform-box: initial; transform-origin: initial; transform-style: initial; transition: initial; user-select: initial; vector-effect: initial; vertical-align: initial; visibility: initial; -webkit-app-region: initial; border-spacing: initial; -webkit-border-image: initial; -webkit-box-align: initial; -webkit-box-decoration-break: initial; -webkit-box-direction: initial; -webkit-box-flex: initial; -webkit-box-ordinal-group: initial; -webkit-box-orient: initial; -webkit-box-pack: initial; -webkit-box-reflect: initial; -webkit-highlight: initial; -webkit-hyphenate-character: initial; -webkit-line-break: initial; -webkit-line-clamp: initial; -webkit-mask-box-image: initial; -webkit-mask: initial; -webkit-mask-composite: initial; -webkit-perspective-origin-x: initial; -webkit-perspective-origin-y: initial; -webkit-print-color-adjust: initial; -webkit-rtl-ordering: initial; -webkit-ruby-position: initial; -webkit-tap-highlight-color: initial; -webkit-text-combine: initial; -webkit-text-decorations-in-effect: initial; -webkit-text-emphasis: initial; -webkit-text-emphasis-position: initial; -webkit-text-fill-color: initial; -webkit-text-security: initial; -webkit-text-stroke: initial; -webkit-transform-origin-x: initial; -webkit-transform-origin-y: initial; -webkit-transform-origin-z: initial; -webkit-user-drag: initial; -webkit-user-modify: initial; white-space: initial; widows: initial; width: initial; will-change: initial; word-break: initial; word-spacing: initial; x: initial; y: initial; z-index: initial;">
+
+    <div class="m-5">
+        <h1 class="font-bold text-4xl my-2">Privacy Policy of Léo Corporation</h1>
+
+        <p>Léo Corporation operates the leocorporation.dev website, which provides the SERVICE.</p>
+
+        <p>This page is used to inform website visitors regarding our policies with the collection, use, and disclosure
+            of
+            Personal Information if anyone decided to use our Service, the Léo Corporation website.</p>
+
+        <p>If you choose to use our Service, then you agree to the collection and use of information in relation with
+            this
+            policy. The Personal Information that we collect are used for providing and improving the Service. We will
+            not
+            use or share your information with anyone except as described in this Privacy Policy.
+
+        <p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is
+            accessible
+            at leocorporation.dev, unless otherwise defined in this Privacy Policy.</p>
+
+        <h2 class="font-bold text-2xl my-2">Information Collection and Use</h2>
+
+        <p>For a better experience while using our Service, we may require you to provide us with certain personally
+            identifiable information, including but not limited to your name, phone number, and postal address. The
+            information that we collect will be used to contact or identify you.</p>
+
+        <h2 class="font-bold text-2xl my-2">Log Data</h2>
+
+        <p>We want to inform you that whenever you visit our Service, we collect information that your browser sends to
+            us
+            that is called Log Data. This Log Data may include information such as your computer’s Internet Protocol
+            ("IP")
+            address, browser version, pages of our Service that you visit, the time and date of your visit, the time
+            spent
+            on those pages, and other statistics.</p>
+
+        <h2 class="font-bold text-2xl my-2">Cookies</h2>
+
+        <p>Cookies are files with small amount of data that is commonly used an anonymous unique identifier. These are
+            sent
+            to your browser from the website that you visit and are stored on your computer’s hard drive.</p>
+
+        <p>Our website uses these "cookies" to collection information and to improve our Service. You have the option to
+            either accept or refuse these cookies, and know when a cookie is being sent to your computer. If you choose
+            to
+            refuse our cookies, you may not be able to use some portions of our Service.</p>
+
+        <p>For more general information on cookies, please read <a
+                href="https://www.privacypolicyonline.com/what-are-cookies/">"What Are Cookies"</a>.</p>
+
+        <h2 class="font-bold text-2xl my-2">Service Providers</h2>
+
+        <p>We may employ third-party companies and individuals due to the following reasons:</p>
+
+        <ul class="list-disc list-inside">
+            <li>To facilitate our Service;</li>
+            <li>To provide the Service on our behalf;</li>
+            <li>To perform Service-related services; or</li>
+            <li>To assist us in analyzing how our Service is used.</li>
+        </ul>
+
+        <p>We want to inform our Service users that these third parties have access to your Personal Information. The
+            reason
+            is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use
+            the
+            information for any other purpose.</p>
+
+        <h2 class="font-bold text-2xl my-2">Security</h2>
+
+        <p>We value your trust in providing us your Personal Information, thus we are striving to use commercially
+            acceptable means of protecting it. But remember that no method of transmission over the internet, or method
+            of
+            electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.</p>
+
+        <h2 class="font-bold text-2xl my-2">Links to Other Sites</h2>
+
+        <p>Our Service may contain links to other sites. If you click on a third-party link, you will be directed to
+            that
+            site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the
+            Privacy Policy of these websites. We have no control over, and assume no responsibility for the content,
+            privacy
+            policies, or practices of any third-party sites or services.</p>
+
+        <p>Children's Privacy</p>
+
+        <p>Our Services do not address anyone under the age of 13. We do not knowingly collect personal identifiable
+            information from children under 13. In the case we discover that a child under 13 has provided us with
+            personal
+            information, we immediately delete this from our servers. If you are a parent or guardian and you are aware
+            that
+            your child has provided us with personal information, please contact us so that we will be able to do
+            necessary
+            actions.</p>
+
+        <h2 class="font-bold text-2xl my-2">Changes to This Privacy Policy</h2>
+
+        <p>We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for
+            any
+            changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are
+            effective immediately, after they are posted on this page.</p>
+
+        <h2 class="font-bold text-2xl my-2">Contact Us</h2>
+
+        <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</p>
     </div>
+
+    <footer class="grid grid-cols-1 sm:grid-cols-2 p-16 bg-indigo-600 text-white">
+        <p id="copyright">© Léo Corporation</p>
+        <div id="social-networks" class="grid grid-rows-3 mt-4 sm:mt-0">
+            <a href="https://github.com/Leo-Corporation/" class="flex flex-row items-center">
+                <img class="h-6 mr-5" src="https://img.icons8.com/fluent-systems-filled/48/FFFFFF/github.png" />
+                <p class="font-semibold">GitHub</p>
+            </a>
+            <a href="https://twitter.com/LeoCorpNews" class="flex flex-row items-center">
+                <img class="h-6 mr-5" src="https://img.icons8.com/fluent-systems-filled/48/FFFFFF/twitter.png" />
+                <p class="font-semibold">Twitter</p>
+            </a>
+            <a href="https://www.youtube.com/channel/UC283Dtf6EJ8eKfRoo0ISmqg" class="flex flex-row items-center">
+                <img class="h-6 mr-5" src="https://img.icons8.com/fluent-systems-filled/48/FFFFFF/youtube.png" />
+                <p class="font-semibold">YouTube</p>
+            </a>
+        </div>
+    </footer>
+
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/copyright.js"></script>
 </body>
 
 </html>
