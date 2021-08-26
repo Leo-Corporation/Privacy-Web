@@ -11,7 +11,7 @@
   <h1 align="center">Privacy-Web</h1>
 
   <p align="center">
-    A modern password generator for Windows.
+    The Léo Corporation's privacy website.
     <br />
     <a href="https://github.com/Leo-Corporation/Privacy-Web/issues/new?assignees=&labels=bug&template=bug-report.yml&title=%5BBug%5D+">Report Bug</a>
     ·
