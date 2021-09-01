@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Social networks meta -->
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://privacy.leocorporation.dev/img/social.png">
+    <meta name="twitter:description" content="Léo Corporation's official website. Software creation for Windows.">
+    <meta name="twitter:title" content="Privacy | Léo Corporation">
+
+    <!-- Facebook/Linkedin -->
+    <meta property="og:description" content="Léo Corporation's official website. Software creation for Windows.">
+    <meta property="og:image" content="https://privacy.leocorporation.dev/img/social.png">
+    <meta property="og:title" content="Privacy | Léo Coporation">
+
+    <meta name="description" content="Léo Corporation's Privacy policy for its website.">
+
+    <title>Privacy | Léo Corporation</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <link rel="icon" href="favicon.png" />
+</head>
+
+<body style="font-family: Montserrat, sans-serif;">
+    <header id="header" x-data="{ mobileMenuOpen : false }"
+        class="backdrop-filter transition backdrop-blur-lg flex flex-wrap flex-row justify-between md:items-center md:space-x-4 sticky top-0 w-full py-6 px-6">
+        <a href="https://leocorporation.dev/" class="block">
+            <span class="sr-only">Léo Corporation</span>
+            <img class="h-6 md:h-8" src="img/logo.png" alt="Logo" title=" Logo">
+        </a>
+        <button @click="mobileMenuOpen = !mobileMenuOpen"
+            class="inline-block md:hidden w-8 h-8 bg-gray-200 text-gray-600 p-1">
+            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+        <nav class="absolute md:relative top-16 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto bg-white shadow-md rounded-lg md:rounded-none md:shadow-none md:bg-transparent p-6 pt-0 md:p-0"
+            :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}" @click.away="mobileMenuOpen = false">
+            <a href="index" class="block py-1 text-gray-600 hover:text-blue-600 transition">Privacy</a>
+            <a href="#" class="block py-1 text-blue-600 hover:text-blue-600 transition">Software Distribution</a>
+            <a href="https://leocorporation.dev/contact"
+                class="block py-1 text-gray-600 hover:text-blue-600 transition">Contact</a>
+            <a href="https://leocorporation.dev/" class="block py-1 text-gray-600 hover:text-blue-600 transition">Back
+                to leocorporation.dev</a>
+        </nav>
+    </header>
+
+    <div id="distribution" class="m-5 sm:mx-24 md:mx-48 lg:mx-80">
+        <h1 class="text-3xl font-bold">Software Distribution</h1>
+        <p>Learn more about software distribution through a QnA.</p>
+        <br />
+        <h2 class="text-xl font-bold">Where can I download your softwares?</h2>
+        <p>We have a few places where you can safely download our softwares and applications, we call them "trusted
+            sources":</p>
+
+        <br />
+
+        <ul class="list-disc ml-10">
+            <li>GitHub - <a class="underline" href="https://github.com/Leo-Corporation">@Leo-Corporation</a></li>
+            <li><a href="https://leocorporation.dev/store" class="underline">Store</a> and any leocorporation.dev
+                pages/subdomain</li>
+            <li>Xalyus Store</li>
+        </ul>
+
+        <br />
+
+        <h2 class="text-xl font-bold">I saw your softwares and applications on another website, are they safe?</h2>
+        <p>The only places that are safe to download our softwares are GitHub, Léo Corporation Web Store and Xalyus
+            Store. If you are
+            downloading our softwares on third-party websites, we are not responsible if the file is containing malware
+            or other threats that may dammage your computer.</p>
+
+        <br />
+
+        <h2 class="text-xl font-bold">Have you published your softwares on third-party website?</h2>
+        <p>No, we do not publish our software on third-party websites. For more informations, see "Where can you
+            download our softwares?"</p>
+
+        <br />
+
+        <h2 class="text-xl font-bold">I got a warning by my antivirus that the app I downloaded was a threat despite
+            being from a trusted source, is the app safe?</h2>
+        <p>If you downloaded one of our software from either the official GitHub repo, the web store, or Xalyus Store,
+            you have nothing to worry about. Those warnings are issued by your antivirus because our apps aren't signed
+            with a valid certificate.
+        </p>
+    </div>
+
+    <footer class="grid grid-cols-1 sm:grid-cols-2 p-16 bg-gray-100 text-gray-500">
+        <div class="flex flex-col">
+            <h3 class="font-bold mb-5">
+                ABOUT
+            </h3>
+            <p id="copyright">© Léo Corporation</p>
+            <a href="https://status.leocorporation.dev/" class="hover:underline">Status</a>
+        </div>
+        <div id="social-networks" class="flex flex-col mt-4 sm:mt-0">
+            <h3 class="font-bold mb-5">
+                SOCIAL
+            </h3>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Leo-Corporation/"
+                class="flex flex-row items-center">
+                <img alt="Image" class="h-6 mr-5"
+                    src="https://img.icons8.com/fluent-systems-filled/48/6b7280/github.png" />
+                <p class="font-semibold">GitHub</p>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/LeoCorpNews"
+                class="flex flex-row items-center">
+                <img alt="Image" class="h-6 mr-5"
+                    src="https://img.icons8.com/fluent-systems-filled/48/6b7280/twitter.png" />
+                <p class="font-semibold">Twitter</p>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UC283Dtf6EJ8eKfRoo0ISmqg"
+                class="flex flex-row items-center">
+                <img alt="Image" class="h-6 mr-5"
+                    src="https://img.icons8.com/fluency-systems-filled/48/6b7280/youtube-play.png" />
+                <p class="font-semibold">YouTube</p>
+            </a>
+        </div>
+    </footer>
+
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/copyright.js"></script>
+</body>
+
+</html>
