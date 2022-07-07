@@ -36,13 +36,33 @@
         rel="stylesheet">
 </head>
 
-<body style="font-family: Montserrat, sans-serif;" class="bg-white text-black dark:text-white dark:bg-[#000014]">
+<body style="font-family: Hauora, sans-serif;" class="bg-white text-black dark:text-white dark:bg-[#000014]">
     <div id="header" style="z-index: 1000;"
         class="w-full sticky top-0 text-gray-700 dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.1)] dark:text-gray-200">
         <style>
             @font-face {
-                font-family: "FluentIconsRegular";
-                src: url("fonts/FluentSystemIcons-Regular.ttf");
+                font-family: "Hauora";
+                src: url("fonts/Hauora-Regular.ttf") format("truetype");
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: "Hauora";
+                src: url("fonts/Hauora-Bold.ttf") format("truetype");
+                font-weight: 700;
+            }
+
+            @font-face {
+                font-family: "Hauora";
+                src: url("fonts/Hauora-ExtraBold.ttf") format("truetype");
+                font-weight: 900;
+            }
+
+            @font-face {
+                font-family: "Hauora";
+                src: url("fonts/Hauora-SemiBold.ttf") format("truetype");
+                font-weight: 600;
             }
         </style>
         <div x-data="{ open: false }"
