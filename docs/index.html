@@ -34,224 +34,179 @@
         rel="stylesheet">
 </head>
 
-<body style="font-family: Hauora, sans-serif;" class="bg-white text-black dark:text-white dark:bg-[#000014]">
-    <div id="header" style="z-index: 1000;"
-        class="w-full sticky top-0 text-gray-700 dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.1)] dark:text-gray-200">
-        <style>
-            @font-face {
-                font-family: "Hauora";
-                src: url("fonts/Hauora-Regular.ttf") format("truetype");
-                font-weight: 400;
-                font-style: normal;
-            }
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Domine:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-            @font-face {
-                font-family: "Hauora";
-                src: url("fonts/Hauora-ExtraBold.ttf") format("truetype");
-                font-weight: 700;
-            }
+  <body
+    style="font-family: Hauora, sans-serif"
+    class="bg-white text-black dark:text-white dark:bg-[#000014]"
+  >
+    <div
+      id="header"
+      style="z-index: 1000"
+      class="w-full sticky top-0 text-gray-700 dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.1)] dark:text-gray-200"
+    >
+      <style>
+        @font-face {
+          font-family: "Hauora";
+          src: url("fonts/Hauora-Regular.ttf") format("truetype");
+          font-weight: 400;
+          font-style: normal;
+        }
 
-            @font-face {
-                font-family: "Hauora";
-                src: url("fonts/Hauora-ExtraBold.ttf") format("truetype");
-                font-weight: 900;
-            }
+        @font-face {
+          font-family: "Hauora";
+          src: url("fonts/Hauora-ExtraBold.ttf") format("truetype");
+          font-weight: 700;
+        }
 
-            @font-face {
-                font-family: "Hauora";
-                src: url("fonts/Hauora-SemiBold.ttf") format("truetype");
-                font-weight: 600;
-            }
-        </style>
-        <div x-data="{ open: false }"
-            class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-            <div class="p-4 flex flex-row items-center justify-between">
-                <a href="#"
-                    class="text-lg font-bold text-gray-900 flex rounded-lg dark:text-white focus:outline-none focus:shadow-outline items-center">
-                    <img src="img/logo.png" alt="Léo Corporation" class="h-10 w-10">
-                    <p>Privacy</p>
-                </a>
-                <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
-                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-                        <path x-show="!open" fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                            clip-rule="evenodd"></path>
-                        <path x-show="open" fill-rule="evenodd"
-                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-            </div>
-            <nav :class="{'flex': open, 'hidden': !open}"
-                class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex  md:flex-row">
-                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="distribution">Software distribution</a>
-                <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="https://blog.leocorporation.dev/">Blog</a>
-                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="https://leocorporation.dev/contact">Contact</a>
-            </nav>
+        @font-face {
+          font-family: "Hauora";
+          src: url("fonts/Hauora-ExtraBold.ttf") format("truetype");
+          font-weight: 900;
+        }
+
+        @font-face {
+          font-family: "Hauora";
+          src: url("fonts/Hauora-SemiBold.ttf") format("truetype");
+          font-weight: 600;
+        }
+      </style>
+      <div
+        x-data="{ open: false }"
+        class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8"
+      >
+        <div class="p-4 flex flex-row items-center justify-between">
+          <a
+            href="#"
+            class="text-lg font-bold text-gray-900 flex rounded-lg dark:text-white focus:outline-none focus:shadow-outline items-center"
+          >
+            <img src="img/logo.png" alt="Léo Corporation" class="h-10 w-10" />
+            <p>Privacy</p>
+          </a>
+          <button
+            class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
+            @click="open = !open"
+          >
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+              <path
+                x-show="!open"
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+              <path
+                x-show="open"
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
         </div>
+        <nav
+          :class="{'flex': open, 'hidden': !open}"
+          class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:flex-row"
+        >
+          <a
+            class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="distribution"
+            >Software distribution</a
+          >
+          <a
+            class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="https://blog.leocorporation.dev/"
+            >Blog</a
+          >
+          <a
+            class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="https://leocorporation.dev/contact"
+            >Contact</a
+          >
+        </nav>
+      </div>
     </div>
 
-    <div class="flex flex-col items-center my-24">
-        <h1 class="font-bold text-4xl text-center">Privacy Policy of Léo Corporation</h1>
-        <p class="italic">Last updated January, 17th 2022</p>
-    </div>
-    <div class="flex flex-col md:m-auto ml-10 mr-10 text-lg"
-        style="font-family: Domine, Times, serif; max-width: 793px;">
-
-        <h2 class="font-bold text-3xl my-2">Introduction</h2>
-
-        <p>Léo Corporation operates the leocorporation.dev website, which provides the SERVICE.</p>
-
-        <p>This page is used to inform website visitors regarding our policies with the collection, use, and disclosure
-            of
-            Personal Information if anyone decided to use our Service, the Léo Corporation website.</p>
-
-        <p>If you choose to use our Service, then you agree to the collection and use of information in relation with
-            this
-            policy. The Personal Information that we collect are used for providing and improving the Service. We will
-            not
-            use or share your information with anyone except as described in this Privacy Policy.
-
-        <p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is
-            accessible
-            at leocorporation.dev, unless otherwise defined in this Privacy Policy.</p>
-
-        <h2 class="font-bold text-3xl my-2">Information Collection and Use</h2>
-
-        <p>For a better experience while using our Service, we may require you to provide us with certain personally
-            identifiable information, including but not limited to your name, phone number, and postal address. The
-            information that we collect will be used to contact or identify you.</p>
-        <br>
-        <p class="italic">Note that Léo Corporation doesn't collect any data when you are using our softwares. However;
-            we can collect data when you use our website through a service provider*.</p>
-
-        <h2 class="font-bold text-2xl my-2">Log Data</h2>
-
-        <p>We want to inform you that whenever you visit our Service, we collect information that your browser sends to
-            us
-            that is called Log Data. This Log Data may include information such as your computer’s Internet Protocol
-            ("IP")
-            address, browser version, pages of our Service that you visit, the time and date of your visit, the time
-            spent
-            on those pages, and other statistics.</p>
-
-        <h2 class="font-bold text-3xl my-2">Cookies</h2>
-
-        <p>Cookies are files with small amount of data that is commonly used an anonymous unique identifier. These are
-            sent
-            to your browser from the website that you visit and are stored on your computer’s hard drive.</p>
-
-        <p>Our website uses these "cookies" to collection information and to improve our Service. You have the option to
-            either accept or refuse these cookies, and know when a cookie is being sent to your computer. If you choose
-            to
-            refuse our cookies, you may not be able to use some portions of our Service.</p>
-
-        <p>For more general information on cookies, please read <a class="hover:underline"
-                href="https://www.privacypolicyonline.com/what-are-cookies/">"What Are Cookies"</a>.</p>
-
-        <h2 class="font-bold text-3xl my-2">Service Providers</h2>
-
-        <p>We may employ third-party companies and individuals due to the following reasons:</p>
-
-        <ul class="list-disc list-inside my-8">
-            <li>To facilitate our Service;</li>
-            <li>To provide the Service on our behalf;</li>
-            <li>To perform Service-related services; or</li>
-            <li>To assist us in analyzing how our Service is used.</li>
-        </ul>
-
-        <p>We want to inform our Service users that these third parties have access to your Personal Information. The
-            reason
-            is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use
-            the
-            information for any other purpose.</p>
-
-        <h2 class="font-bold text-3xl my-2">Security</h2>
-
-        <p>We value your trust in providing us your Personal Information, thus we are striving to use commercially
-            acceptable means of protecting it. But remember that no method of transmission over the internet, or method
-            of
-            electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.</p>
-
-        <h2 class="font-bold text-3xl my-2">Links to Other Sites</h2>
-
-        <p>Our Service may contain links to other sites. If you click on a third-party link, you will be directed to
-            that
-            site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the
-            Privacy Policy of these websites. We have no control over, and assume no responsibility for the content,
-            privacy
-            policies, or practices of any third-party sites or services.</p>
-
-        <h2 class="font-bold text-3xl my-2">Children's Privacy</h2>
-
-        <p>Our Services do not address anyone under the age of 13. We do not knowingly collect personal identifiable
-            information from children under 13. In the case we discover that a child under 13 has provided us with
-            personal
-            information, we immediately delete this from our servers. If you are a parent or guardian and you are aware
-            that
-            your child has provided us with personal information, please contact us so that we will be able to do
-            necessary
-            actions.</p>
-
-        <h2 class="font-bold text-3xl my-2">Changes to This Privacy Policy</h2>
-
-        <p>We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for
-            any
-            changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are
-            effective immediately, after they are posted on this page.</p>
-
-        <h2 class="font-bold text-3xl my-2">Contact Us</h2>
-
-        <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</p>
-
-        <br>
-    </div>
-
-    <footer class="grid grid-cols-1 sm:grid-cols-2 p-16 dark:bg-gray-800 bg-gray-100 dark:text-gray-300 text-gray-500">
-        <div class="flex flex-col">
-            <h3 class="font-bold mb-5">
-                ABOUT
-            </h3>
-            <p id="copyright">© Léo Corporation</p>
-            <a href="https://status.leocorporation.dev/" class="hover:underline">Status</a>
+    <footer
+      class="grid grid-cols-1 sm:grid-cols-2 p-16 dark:bg-gray-800 bg-gray-100 dark:text-gray-300 text-gray-500"
+    >
+      <div class="flex flex-col">
+        <h3 class="font-bold mb-5">ABOUT</h3>
+        <p id="copyright">© Léo Corporation</p>
+        <a href="https://status.leocorporation.dev/" class="hover:underline"
+          >Status</a
+        >
+      </div>
+      <div id="social-networks" class="flex flex-col mt-4 sm:mt-0">
+        <h3 class="font-bold mb-5">SOCIAL</h3>
+        <div class="flex">
+          <a
+            title="GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/Leo-Corporation/"
+          >
+            <img
+              alt="Image"
+              class="h-6 mr-5"
+              src="https://img.icons8.com/fluent-systems-filled/48/6b7280/github.png"
+            />
+          </a>
+          <a
+            title="Twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/LeoCorpNews"
+          >
+            <img
+              alt="Image"
+              class="h-6 mr-5"
+              src="https://img.icons8.com/fluent-systems-filled/48/6b7280/twitter.png"
+            />
+          </a>
+          <a
+            title="YouTube"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.youtube.com/channel/UC283Dtf6EJ8eKfRoo0ISmqg"
+          >
+            <img
+              alt="Image"
+              class="h-6 mr-5"
+              src="https://img.icons8.com/fluency-systems-filled/48/6b7280/youtube-play.png"
+            />
+          </a>
+          <a
+            title="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/leocorporation_/"
+          >
+            <img
+              alt="Image"
+              class="h-6 mr-5"
+              src="https://img.icons8.com/fluency-systems-filled/48/6b7280/instagram-new.png"
+            />
+          </a>
+          <a
+            title="Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com/LeoCorporationSoftwares/"
+          >
+            <img
+              alt="Image"
+              class="h-6 mr-5"
+              src="https://img.icons8.com/fluency-systems-filled/48/6b7280/facebook-new.png"
+            />
+          </a>
         </div>
-        <div id="social-networks" class="flex flex-col mt-4 sm:mt-0">
-            <h3 class="font-bold mb-5">
-                SOCIAL
-            </h3>
-            <div class="flex">
-                <a title="GitHub" target="_blank" rel="noopener noreferrer" href="https://github.com/Leo-Corporation/">
-                    <img alt="Image" class="h-6 mr-5"
-                        src="https://img.icons8.com/fluent-systems-filled/48/6b7280/github.png" />
-                </a>
-                <a title="Twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/LeoCorpNews">
-                    <img alt="Image" class="h-6 mr-5"
-                        src="https://img.icons8.com/fluent-systems-filled/48/6b7280/twitter.png" />
-                </a>
-                <a title="YouTube" target="_blank" rel="noopener noreferrer"
-                    href="https://www.youtube.com/channel/UC283Dtf6EJ8eKfRoo0ISmqg">
-                    <img alt="Image" class="h-6 mr-5"
-                        src="https://img.icons8.com/fluency-systems-filled/48/6b7280/youtube-play.png" />
-                </a>
-                <a title="Instagram" target="_blank" rel="noopener noreferrer"
-                    href="https://www.instagram.com/leocorporation_/">
-                    <img alt="Image" class="h-6 mr-5"
-                        src="https://img.icons8.com/fluency-systems-filled/48/6b7280/instagram-new.png" />
-                </a>
-                <a title="Facebook" target="_blank" rel="noopener noreferrer"
-                    href="https://www.facebook.com/LeoCorporationSoftwares/">
-                    <img alt="Image" class="h-6 mr-5"
-                        src="https://img.icons8.com/fluency-systems-filled/48/6b7280/facebook-new.png" />
-                </a>
-            </div>
-        </div>
+      </div>
     </footer>
 
     <script src="scripts/scroll.js"></script>
     <script src="scripts/copyright.js"></script>
-</body>
-
+  </body>
 </html>
