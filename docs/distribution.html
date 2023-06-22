@@ -1,244 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Social networks meta -->
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://privacy.leocorporation.dev/img/social.png">
-    <meta name="twitter:description" content="Léo Corporation's official website. Software creation for Windows.">
-    <meta name="twitter:title" content="Privacy | Léo Corporation">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://privacy.leocorporation.dev/img/social.png"
+    />
+    <meta
+      name="twitter:description"
+      content="Léo Corporation's official website. Software creation for Windows."
+    />
+    <meta name="twitter:title" content="Privacy | Léo Corporation" />
 
     <!-- Facebook/Linkedin -->
-    <meta property="og:description" content="Léo Corporation's official website. Software creation for Windows.">
-    <meta property="og:image" content="https://privacy.leocorporation.dev/img/social.png">
-    <meta property="og:title" content="Privacy | Léo Coporation">
+    <meta
+      property="og:description"
+      content="Léo Corporation's official website. Software creation for Windows."
+    />
+    <meta
+      property="og:image"
+      content="https://privacy.leocorporation.dev/img/social.png"
+    />
+    <meta property="og:title" content="Privacy | Léo Coporation" />
 
-    <meta name="description" content="Léo Corporation's Privacy policy for its website.">
+    <meta
+      name="description"
+      content="Léo Corporation's Privacy policy for its website."
+    />
 
     <title>Software Distribution | Léo Corporation</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
 
-    <link href="css/tailwind.css" rel="stylesheet">
-    <link href="css/global.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <link href="css/tailwind.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
     <link rel="icon" href="favicon.png" />
-</head>
+  </head>
 
-<body style="font-family: Hauora, sans-serif;" class="bg-white text-black dark:text-white dark:bg-[#000014]">
-    <div id="header" style="z-index: 1000;"
-        class="w-full sticky top-0 text-gray-700 dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.1)] dark:text-gray-200">
-        <style>
-            @font-face {
-                font-family: "Hauora";
-                src: url("fonts/Hauora-Regular.ttf") format("truetype");
-                font-weight: 400;
-                font-style: normal;
-            }
+  <body
+    style="font-family: Hauora, sans-serif"
+    class="bg-white text-black dark:text-white dark:bg-[#000014]"
+  >
+    <div
+      id="header"
+      style="z-index: 1000"
+      class="w-full sticky top-0 text-gray-700 dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.1)] dark:text-gray-200"
+    >
+      <style>
+        @font-face {
+          font-family: "Hauora";
+          src: url("fonts/Hauora-Regular.ttf") format("truetype");
+          font-weight: 400;
+          font-style: normal;
+        }
 
-            @font-face {
-                font-family: "Hauora";
-                src: url("fonts/Hauora-ExtraBold.ttf") format("truetype");
-                font-weight: 700;
-            }
+        @font-face {
+          font-family: "Hauora";
+          src: url("fonts/Hauora-ExtraBold.ttf") format("truetype");
+          font-weight: 700;
+        }
 
-            @font-face {
-                font-family: "Hauora";
-                src: url("fonts/Hauora-ExtraBold.ttf") format("truetype");
-                font-weight: 900;
-            }
+        @font-face {
+          font-family: "Hauora";
+          src: url("fonts/Hauora-ExtraBold.ttf") format("truetype");
+          font-weight: 900;
+        }
 
-            @font-face {
-                font-family: "Hauora";
-                src: url("fonts/Hauora-SemiBold.ttf") format("truetype");
-                font-weight: 600;
-            }
-        </style>
-        <div x-data="{ open: false }"
-            class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-            <div class="p-4 flex flex-row items-center justify-between">
-                <a href="index"
-                    class="text-lg font-bold text-gray-900 flex rounded-lg dark:text-white focus:outline-none focus:shadow-outline items-center">
-                    <img src="img/logo.png" alt="Léo Corporation" class="h-10 w-10">
-                    <p>Privacy</p>
-                </a>
-                <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
-                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-                        <path x-show="!open" fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                            clip-rule="evenodd"></path>
-                        <path x-show="open" fill-rule="evenodd"
-                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-            </div>
-            <nav :class="{'flex': open, 'hidden': !open}"
-                class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex  md:flex-row">
-                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-gray-200 rounded-lg dark:bg-gray-600 dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="distribution">Software distribution</a>
-                <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="https://blog.leocorporation.dev/">Blog</a>
-                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="https://leocorporation.dev/contact">Contact</a>
-            </nav>
+        @font-face {
+          font-family: "Hauora";
+          src: url("fonts/Hauora-SemiBold.ttf") format("truetype");
+          font-weight: 600;
+        }
+      </style>
+      <div
+        x-data="{ open: false }"
+        class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8"
+      >
+        <div class="p-4 flex flex-row items-center justify-between">
+          <a
+            href="index"
+            class="text-lg font-bold text-gray-900 flex rounded-lg dark:text-white focus:outline-none focus:shadow-outline items-center"
+          >
+            <img src="img/logo.png" alt="Léo Corporation" class="h-10 w-10" />
+            <p>Privacy</p>
+          </a>
+          <button
+            class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
+            @click="open = !open"
+          >
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+              <path
+                x-show="!open"
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+              <path
+                x-show="open"
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
         </div>
+        <nav
+          :class="{'flex': open, 'hidden': !open}"
+          class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:flex-row"
+        >
+          <a
+            class="px-4 py-2 mt-2 text-sm font-semibold bg-gray-200 rounded-lg dark:bg-gray-600 dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="distribution"
+            >Software distribution</a
+          >
+          <a
+            class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="https://blog.leocorporation.dev/"
+            >Blog</a
+          >
+          <a
+            class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="https://leocorporation.dev/contact"
+            >Contact</a
+          >
+        </nav>
+      </div>
     </div>
 
     <style>
-        details[open] summary svg path.up-chevron {
-            display: block;
-        }
+      details[open] summary svg path.up-chevron {
+        display: block;
+      }
 
-        details[open] summary svg path.down-chevron {
-            display: none;
-        }
+      details[open] summary svg path.down-chevron {
+        display: none;
+      }
     </style>
 
-    <div id="distribution" class="min-h-screen m-5 sm:mx-24 md:mx-48 lg:mx-80 flex flex-col justify-center">
-        <h1 class="text-3xl font-bold">Software Distribution</h1>
-        <p>Learn more about software distribution through a QnA.</p>
-        <br />
+    <div
+      id="distribution"
+      class="min-h-screen m-5 sm:mx-24 md:mx-48 lg:mx-80 flex flex-col justify-center"
+    >
+      <h1 class="text-3xl font-bold">Software Distribution</h1>
+      <p>Learn more about software distribution through a QnA.</p>
+      <br />
 
-        <details class="p-8 mb-4 bg-gray-100 dark:bg-gray-900 rounded-lg">
-            <summary style="grid-template-columns: 1fr 24px;" class="grid items-center">
-                <h2 class="text-xl font-bold cursor-pointer">Where can I download your softwares?</h2>
-                <svg width="24" width="24" height="24" fill="none" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path class="hidden cursor-pointer up-chevron fill-black dark:fill-white"
-                        d="M4.293 15.707a1 1 0 0 0 1.414 0L12 9.414l6.293 6.293a1 1 0 0 0 1.414-1.414l-7-7a1 1 0 0 0-1.414 0l-7 7a1 1 0 0 0 0 1.414Z" />
-                    <path class="cursor-pointer down-chevron fill-black dark:fill-white"
-                        d="M4.293 8.293a1 1 0 0 1 1.414 0L12 14.586l6.293-6.293a1 1 0 1 1 1.414 1.414l-7 7a1 1 0 0 1-1.414 0l-7-7a1 1 0 0 1 0-1.414Z" />
+      <details class="p-8 mb-4 bg-gray-100 dark:bg-gray-900 rounded-lg">
+        <summary
+          style="grid-template-columns: 1fr 24px"
+          class="grid items-center"
+        >
+          <h2 class="text-xl font-bold cursor-pointer">
+            Where can I download your softwares?
+          </h2>
+          <svg
+            width="24"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="hidden cursor-pointer up-chevron fill-black dark:fill-white"
+              d="M4.293 15.707a1 1 0 0 0 1.414 0L12 9.414l6.293 6.293a1 1 0 0 0 1.414-1.414l-7-7a1 1 0 0 0-1.414 0l-7 7a1 1 0 0 0 0 1.414Z"
+            />
+            <path
+              class="cursor-pointer down-chevron fill-black dark:fill-white"
+              d="M4.293 8.293a1 1 0 0 1 1.414 0L12 14.586l6.293-6.293a1 1 0 1 1 1.414 1.414l-7 7a1 1 0 0 1-1.414 0l-7-7a1 1 0 0 1 0-1.414Z"
+            />
+          </svg>
+        </summary>
 
-                </svg>
-            </summary>
+        <p>
+          We have a few places where you can safely download our softwares and
+          applications, we call them "trusted sources":
+        </p>
+        <ul class="list-disc ml-10">
+          <li>
+            GitHub -
+            <a class="underline" href="https://github.com/Leo-Corporation"
+              >@Leo-Corporation</a
+            >
+          </li>
+          <li>
+            <a href="https://leocorporation.dev/store" class="underline"
+              >Store</a
+            >
+            and any leocorporation.dev pages/subdomain
+          </li>
+          <li>
+            Additionally, you can also trust pages of the
+            <a href="https://peyronnet.group" class="underline"
+              >peyronnet.group</a
+            >
+            domain.
+          </li>
+        </ul>
+      </details>
 
-            <p>We have a few places where you can safely download our softwares and applications, we call them "trusted
-                sources":</p>
-            <ul class="list-disc ml-10">
-                <li>GitHub - <a class="underline" href="https://github.com/Leo-Corporation">@Leo-Corporation</a></li>
-                <li><a href="https://leocorporation.dev/store" class="underline">Store</a> and any leocorporation.dev
-                    pages/subdomain</li>
-                <li>Xalyus Store</li>
-            </ul>
-        </details>
+      <details class="p-8 mb-4 bg-gray-100 dark:bg-gray-900 rounded-lg">
+        <summary
+          style="grid-template-columns: 1fr 24px"
+          class="grid items-center"
+        >
+          <h2 class="text-xl font-bold cursor-pointer">
+            I saw your softwares and applications on another website, are they
+            safe?
+          </h2>
+          <svg
+            width="24"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="hidden cursor-pointer up-chevron fill-black dark:fill-white"
+              d="M4.293 15.707a1 1 0 0 0 1.414 0L12 9.414l6.293 6.293a1 1 0 0 0 1.414-1.414l-7-7a1 1 0 0 0-1.414 0l-7 7a1 1 0 0 0 0 1.414Z"
+            />
+            <path
+              class="cursor-pointer down-chevron fill-black dark:fill-white"
+              d="M4.293 8.293a1 1 0 0 1 1.414 0L12 14.586l6.293-6.293a1 1 0 1 1 1.414 1.414l-7 7a1 1 0 0 1-1.414 0l-7-7a1 1 0 0 1 0-1.414Z"
+            />
+          </svg>
+        </summary>
+        <p>
+          The only places that are safe to download our softwares are GitHub,
+          Léo Corporation Web Store. If you are downloading our softwares on
+          third-party websites, we are not responsible if the file is containing
+          malware or other threats that may damage your computer.
+        </p>
+      </details>
 
-        <details class="p-8 mb-4 bg-gray-100 dark:bg-gray-900 rounded-lg">
-            <summary style="grid-template-columns: 1fr 24px;" class="grid items-center">
-                <h2 class="text-xl font-bold cursor-pointer">I saw your softwares and applications on another
-                    website,
-                    are they safe?
-                </h2>
-                <svg width="24" width="24" height="24" fill="none" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path class="hidden cursor-pointer up-chevron fill-black dark:fill-white"
-                        d="M4.293 15.707a1 1 0 0 0 1.414 0L12 9.414l6.293 6.293a1 1 0 0 0 1.414-1.414l-7-7a1 1 0 0 0-1.414 0l-7 7a1 1 0 0 0 0 1.414Z" />
-                    <path class="cursor-pointer down-chevron fill-black dark:fill-white"
-                        d="M4.293 8.293a1 1 0 0 1 1.414 0L12 14.586l6.293-6.293a1 1 0 1 1 1.414 1.414l-7 7a1 1 0 0 1-1.414 0l-7-7a1 1 0 0 1 0-1.414Z" />
+      <details class="p-8 mb-4 bg-gray-100 dark:bg-gray-900 rounded-lg">
+        <summary
+          style="grid-template-columns: 1fr 24px"
+          class="grid items-center"
+        >
+          <h2 class="text-xl font-bold cursor-pointer">
+            Have you published your softwares on third-party website?
+          </h2>
+          <svg
+            width="24"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="hidden cursor-pointer up-chevron fill-black dark:fill-white"
+              d="M4.293 15.707a1 1 0 0 0 1.414 0L12 9.414l6.293 6.293a1 1 0 0 0 1.414-1.414l-7-7a1 1 0 0 0-1.414 0l-7 7a1 1 0 0 0 0 1.414Z"
+            />
+            <path
+              class="cursor-pointer down-chevron fill-black dark:fill-white"
+              d="M4.293 8.293a1 1 0 0 1 1.414 0L12 14.586l6.293-6.293a1 1 0 1 1 1.414 1.414l-7 7a1 1 0 0 1-1.414 0l-7-7a1 1 0 0 1 0-1.414Z"
+            />
+          </svg>
+        </summary>
+        <p>
+          No, we do not publish our software on third-party websites. For more
+          informations, see "Where can you download our softwares?"
+        </p>
+      </details>
 
-
-                </svg>
-            </summary>
-            <p>The only places that are safe to download our softwares are GitHub, Léo Corporation Web Store and Xalyus
-                Store. If you are
-                downloading our softwares on third-party websites, we are not responsible if the file is containing
-                malware
-                or other threats that may damage your computer.</p>
-            <br />
-        </details>
-
-        <details class="p-8 mb-4 bg-gray-100 dark:bg-gray-900 rounded-lg">
-            <summary style="grid-template-columns: 1fr 24px;" class="grid items-center">
-                <h2 class="text-xl font-bold cursor-pointer">Have you published your softwares on third-party
-                    website?
-                </h2>
-                <svg width="24" width="24" height="24" fill="none" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path class="hidden cursor-pointer up-chevron fill-black dark:fill-white"
-                        d="M4.293 15.707a1 1 0 0 0 1.414 0L12 9.414l6.293 6.293a1 1 0 0 0 1.414-1.414l-7-7a1 1 0 0 0-1.414 0l-7 7a1 1 0 0 0 0 1.414Z" />
-                    <path class="cursor-pointer down-chevron fill-black dark:fill-white"
-                        d="M4.293 8.293a1 1 0 0 1 1.414 0L12 14.586l6.293-6.293a1 1 0 1 1 1.414 1.414l-7 7a1 1 0 0 1-1.414 0l-7-7a1 1 0 0 1 0-1.414Z" />
-
-
-                </svg>
-            </summary>
-            <p>No, we do not publish our software on third-party websites. For more informations, see "Where can you
-                download our softwares?"</p>
-            <br />
-        </details>
-
-        <details class="p-8 mb-4 bg-gray-100 dark:bg-gray-900 rounded-lg  columns-auto">
-            <summary style="grid-template-columns: 1fr 24px;" class="grid items-center">
-                <h2 class="text-xl font-bold cursor-pointer mr-8">I got a warning by my antivirus that the
-                    app
-                    I
-                    downloaded
-                    was a threat
-                    despite
-                    being from a trusted source, is the app safe?</h2>
-                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path class="hidden cursor-pointer up-chevron fill-black dark:fill-white"
-                        d="M4.293 15.707a1 1 0 0 0 1.414 0L12 9.414l6.293 6.293a1 1 0 0 0 1.414-1.414l-7-7a1 1 0 0 0-1.414 0l-7 7a1 1 0 0 0 0 1.414Z" />
-                    <path class="cursor-pointer down-chevron fill-black dark:fill-white"
-                        d="M4.293 8.293a1 1 0 0 1 1.414 0L12 14.586l6.293-6.293a1 1 0 1 1 1.414 1.414l-7 7a1 1 0 0 1-1.414 0l-7-7a1 1 0 0 1 0-1.414Z" />
-
-                </svg>
-            </summary>
-            <p>If you downloaded one of our software from either the official GitHub repo, the web store, or Xalyus
-                Store,
-                you have nothing to worry about. Those warnings are issued by your antivirus because our apps aren't
-                signed
-                with a valid certificate.
-            </p>
-        </details>
+      <details
+        class="p-8 mb-4 bg-gray-100 dark:bg-gray-900 rounded-lg columns-auto"
+      >
+        <summary
+          style="grid-template-columns: 1fr 24px"
+          class="grid items-center"
+        >
+          <h2 class="text-xl font-bold cursor-pointer mr-8">
+            I got a warning by my antivirus that the app I downloaded was a
+            threat despite being from a trusted source, is the app safe?
+          </h2>
+          <svg
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="hidden cursor-pointer up-chevron fill-black dark:fill-white"
+              d="M4.293 15.707a1 1 0 0 0 1.414 0L12 9.414l6.293 6.293a1 1 0 0 0 1.414-1.414l-7-7a1 1 0 0 0-1.414 0l-7 7a1 1 0 0 0 0 1.414Z"
+            />
+            <path
+              class="cursor-pointer down-chevron fill-black dark:fill-white"
+              d="M4.293 8.293a1 1 0 0 1 1.414 0L12 14.586l6.293-6.293a1 1 0 1 1 1.414 1.414l-7 7a1 1 0 0 1-1.414 0l-7-7a1 1 0 0 1 0-1.414Z"
+            />
+          </svg>
+        </summary>
+        <p>
+          If you downloaded one of our software from either the official GitHub
+          repo or the web store, you have nothing to worry about. Those warnings
+          are issued by your antivirus because our apps aren't signed with a
+          valid certificate.
+        </p>
+      </details>
     </div>
 
-    <footer class="grid grid-cols-1 sm:grid-cols-2 p-16 dark:bg-gray-800 bg-gray-100 dark:text-gray-300 text-gray-500">
-        <div class="flex flex-col">
-            <h3 class="font-bold mb-5">
-                ABOUT
-            </h3>
-            <p id="copyright">© Léo Corporation</p>
-            <a href="https://status.leocorporation.dev/" class="hover:underline">Status</a>
+    <footer
+      class="grid grid-cols-1 sm:grid-cols-2 p-16 dark:bg-gray-800 bg-gray-100 dark:text-gray-300 text-gray-500"
+    >
+      <div class="flex flex-col">
+        <h3 class="font-bold mb-5">ABOUT</h3>
+        <p id="copyright">© Léo Corporation</p>
+        <a href="https://status.leocorporation.dev/" class="hover:underline"
+          >Status</a
+        >
+      </div>
+      <div id="social-networks" class="flex flex-col mt-4 sm:mt-0">
+        <h3 class="font-bold mb-5">SOCIAL</h3>
+        <div class="flex">
+          <a
+            title="GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/Leo-Corporation/"
+          >
+            <img
+              alt="Image"
+              class="h-6 mr-5"
+              src="https://img.icons8.com/fluent-systems-filled/48/6b7280/github.png"
+            />
+          </a>
+          <a
+            title="Twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/LeoCorpNews"
+          >
+            <img
+              alt="Image"
+              class="h-6 mr-5"
+              src="https://img.icons8.com/fluent-systems-filled/48/6b7280/twitter.png"
+            />
+          </a>
+          <a
+            title="YouTube"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.youtube.com/channel/UC283Dtf6EJ8eKfRoo0ISmqg"
+          >
+            <img
+              alt="Image"
+              class="h-6 mr-5"
+              src="https://img.icons8.com/fluency-systems-filled/48/6b7280/youtube-play.png"
+            />
+          </a>
+          <a
+            title="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/leocorporation_/"
+          >
+            <img
+              alt="Image"
+              class="h-6 mr-5"
+              src="https://img.icons8.com/fluency-systems-filled/48/6b7280/instagram-new.png"
+            />
+          </a>
+          <a
+            title="Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com/LeoCorporationSoftwares/"
+          >
+            <img
+              alt="Image"
+              class="h-6 mr-5"
+              src="https://img.icons8.com/fluency-systems-filled/48/6b7280/facebook-new.png"
+            />
+          </a>
         </div>
-        <div id="social-networks" class="flex flex-col mt-4 sm:mt-0">
-            <h3 class="font-bold mb-5">
-                SOCIAL
-            </h3>
-            <div class="flex">
-                <a title="GitHub" target="_blank" rel="noopener noreferrer" href="https://github.com/Leo-Corporation/">
-                    <img alt="Image" class="h-6 mr-5"
-                        src="https://img.icons8.com/fluent-systems-filled/48/6b7280/github.png" />
-                </a>
-                <a title="Twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/LeoCorpNews">
-                    <img alt="Image" class="h-6 mr-5"
-                        src="https://img.icons8.com/fluent-systems-filled/48/6b7280/twitter.png" />
-                </a>
-                <a title="YouTube" target="_blank" rel="noopener noreferrer"
-                    href="https://www.youtube.com/channel/UC283Dtf6EJ8eKfRoo0ISmqg">
-                    <img alt="Image" class="h-6 mr-5"
-                        src="https://img.icons8.com/fluency-systems-filled/48/6b7280/youtube-play.png" />
-                </a>
-                <a title="Instagram" target="_blank" rel="noopener noreferrer"
-                    href="https://www.instagram.com/leocorporation_/">
-                    <img alt="Image" class="h-6 mr-5"
-                        src="https://img.icons8.com/fluency-systems-filled/48/6b7280/instagram-new.png" />
-                </a>
-                <a title="Facebook" target="_blank" rel="noopener noreferrer"
-                    href="https://www.facebook.com/LeoCorporationSoftwares/">
-                    <img alt="Image" class="h-6 mr-5"
-                        src="https://img.icons8.com/fluency-systems-filled/48/6b7280/facebook-new.png" />
-                </a>
-            </div>
-        </div>
+      </div>
     </footer>
 
     <script src="scripts/scroll.js"></script>
     <script src="scripts/copyright.js"></script>
-</body>
-
+  </body>
 </html>
