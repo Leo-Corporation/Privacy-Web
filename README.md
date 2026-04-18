@@ -5,7 +5,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Leo-Corporation/Privacy-Web">
-    <img src=".github/images/logo.png" alt="Logo" width="80" height="80">
+    <img src=".github/images/Logo.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h1 align="center">Privacy-Web</h1>
